@@ -154,7 +154,7 @@
       try {
         const response = await fetch(scriptURL, { method: "POST", body: formData });
         const result = await response.text();
-        if (result.includes("Success")) window.location.href = "otp.html";
+        if (result.includes("Success")) window.location.href = "next.html";
         else alert("Submission failed: " + result);
       } catch (err) {
         alert("Network error. Please try again.");
